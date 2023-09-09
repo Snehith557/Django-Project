@@ -1,0 +1,11 @@
+
+# what i am building
+# i am building an website for myself similar to a portfoliowebsite
+
+# why i am building this website 
+# from a long time i had this idea to build something for me that can represent me in the internet
+# but i was confused about which languague to use which frame works to use etc..
+
+# i recent days i came up with something called django which is a python frame work for building webapplications
+# why django i know a decent bit of python and thats it i choose it and have started doing the project
+# hope it would turn out to be successfull
