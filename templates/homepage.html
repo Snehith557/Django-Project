@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Home Page</title>
-    <link rel="stylesheet" href="homestyles.css">
+    <link rel="stylesheet" href="{% static 'homestyles.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     
 </head>
@@ -45,7 +46,7 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="image">
-                    <img src="image.jpg" alt="Your Alt Text">
+                    <img src="{% static 'image.jpg' %}" alt="Your Alt Text">
                 </div>
                 <div class="text">
                     <p> Hi Welcome! I am an enthusiastic engineer with a deep passion for understanding the intricacies of technology. I am a Fresher from PES University,
