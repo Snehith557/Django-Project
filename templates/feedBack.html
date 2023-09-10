@@ -1,70 +1,25 @@
+{% load static %}
+
+{% block content %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>Feedback Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 50px;
-            background-color: #f5f5f5;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        form {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        input[type="text"], textarea {
-            width: calc(100% - 22px);
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            background-color: #f9f9f9;
-            transition: border-color 0.3s;
-        }
-
-        input[type="text"]:focus, textarea:focus {
-            outline: none;
-            border-color: #555;
-        }
-
-        input[type="submit"] {
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            font-size: 1em;
-        }
-
-        input[type="submit"]:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="{% static 'feedback.css' %}">
 </head>
 <body>
 
 <h1>Feedback Form</h1>
 
-<form action="process_feedback.php" method="post">
-    Name: <input type="text" name="name"><br><br>
-    Email: <input type="text" name="email"><br><br>
-    Feedback: <textarea name="feedback" rows="4" cols="50"></textarea><br><br>
-    <input type="submit" value="Submit">
+<form action="" method="post">
+    {% csrf_token %}
+    <!-- {{form.as_p}} -->
+    {{form}}
+   
+    <input type="submit" value="Submit"/>
 </form>
 
 </body>
 </html>
+
+{% endblock content %}
