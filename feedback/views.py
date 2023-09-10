@@ -12,7 +12,9 @@ def feedback(request):
         if form.is_valid():
             # print(request.POST)
             form.save()
-        # return redirect('home')
+        # means return to the main page
+        return redirect('/')
+
 
     context = {'form':form}
     return render(request,'feedBack.html',context)
