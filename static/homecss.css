@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+    padding: 5px;
+    margin:auto;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+a{
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    background-color: #444;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+    display: block;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #333;
+    overflow: hidden;
+}
+
+
+nav li {
+    display: inline-block;
+    margin: 0;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+nav a.active {
+    background-color: #555;
+}
+
+nav b {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* Add a subtle underline on hover */
+nav a:hover b {
+    text-decoration: underline;
+}
+.star {
+    font-size: 24px; /* Adjust the size of the stars as needed */
+    color: #FFD700; /* Set the star color to gold */
+}
+
+.half {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 10px; /* Adjust the width to represent half of a star */
+}
+
+

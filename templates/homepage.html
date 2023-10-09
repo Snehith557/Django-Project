@@ -6,44 +6,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume Home Page</title>
-    <link rel="stylesheet" href="{% static 'homestyles.css' %}">
+    <link rel="stylesheet" href="{% static 'homecss.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    
     
 </head>
 
 <body>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#interests">Interests</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     
-    <head>  
-
-        <nav>
-            <ul>
-                <li><a href="#about"><b>About Me</b></a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <!-- here it should be noted that href is projects which  calls the project app -->
-                <li><a href="projects"> Projects</a></li> 
-                <!-- project page has to be implemented and should be attached -->
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="feedback">feedback</a></li>
-            </ul>
-        </nav>
-        <br>
-        
-    </head>
     <header>
-        <br>
-        <br>
+        <!-- <br>    -->
+        <!-- <br> -->
         <h1>SNEHITH H</h1>
     </header>
-    
-    
+
     <main>
-        <!-- <section id="about">
-            <h2>About Me</h2>
-            <p> Hi Welcome! I am an enthusiastic engineer with a deep passion for understanding the intricacies of technology. I am a Fresher from PES University,
-                 I have honed my skills in Data Structures, Algorithms, and Database Systems. My expertise extends to problem-solving, with a keen interest in Cyber Security, Back-end Development, and Computer Networks. I thrive on rapid learning and effective communication, traits that make me a valuable asset to any team</p>
-        </section> -->
         <section id="about">
             <h2>About Me</h2>
             <div class="about-content">
@@ -56,16 +44,13 @@
                 </div>
             </div>
         </section>
-        
-        
 
         <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li>
-                    <p>I am a recent graduate eager to commence my professional journey by securing a full-time role </p>
-                </li>
-                <!-- Add more experiences as needed -->
+                
+                <p>I am a recent graduate eager to commence my professional journey by securing a full-time role </p>
+
             </ul>
         </section>
 
@@ -76,22 +61,43 @@
                     <h3>Degree</h3>
                     <p>Computer Science and Engineering 2020-24</p>
                     <p>PES University  - Bangalore</p>
-                
                 </li>
-                <!-- Add more education details as needed -->
             </ul>
         </section>
+
 
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Python3</li>
-                <li>Mysql</li>
-                <li>C++</li>
-                <!-- <li></li> -->
-                <!-- Add more skills as needed -->
+                
+                <li>Python3
+                  
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                       
+                </li>
+                <li>Mysql
+                    <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                </li>
+                <li>Data-Strctures 
+                    <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                </li>
+                <li>C++
+                    <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                </li>
             </ul>
         </section>
+        
 
         <section id="interests">
             <h2>Interests</h2>
@@ -101,22 +107,20 @@
                 <li>Cryptography</li>
                 <li>Back-end Development</li>
                 <li>Database Systems</li>
-
-                <!-- Add more skills as needed -->
             </ul>
         </section>
 
+        
         <section id="contact">
-            
             <h2>Contact</h2>
             <ul>
-
-                <li><i class="fas fa-envelope"></i> snehith1233@gmail.com</li>
+                <li><i class="fas fa-envelope"></i> snehith1233@gmail.com </li>
                 <li><i class="fas fa-phone"></i> 6362320121</li>
                 <li><i class="fab fa-github"></i><a href="#"> GitHub</a></li>
             </ul>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2023 Snehith H</p>
     </footer>
