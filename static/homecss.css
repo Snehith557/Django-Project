@@ -4,6 +4,7 @@ body {
     padding: 0;
     background-color: #f8f8f8;
     color: #333;
+    
 }
 
 header {
@@ -22,12 +23,16 @@ main {
 
 h4 {
     margin-bottom: 10px;
-    color: #333;
+    color:#555 ;
+    font-size: 14px;
+    font-family: roboto;
+    
 }
 
 section {
     background-color: #fff;
     border: 1px solid #ccc;
+    text-align: auto;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
@@ -48,14 +53,24 @@ button:hover {
     background-color: #555;
 }
 
+
+
 p {
-    color: #555;
+    color: black;
     font-size: 18px;
     line-height: 1.6;
+    font-size: 20px;
+    font-family: roboto;
+    
 }
 
 a{
     color: #333;
+}
+
+.data{
+    font-size: 20px;
+    font-family: roboto;
 }
 
 footer {
@@ -119,7 +134,7 @@ nav a:hover b {
     color: #FFD700; /* Set the star color to gold */
 }
 
-.half {
+.alf {
     position: relative;
     display: inline-block;
     overflow: hidden;
@@ -127,3 +142,50 @@ nav a:hover b {
 }
 
 
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: roboto;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 120px; /* Adjust the width as needed */
+}
+
+.skill-rating {
+    display: inline-block;
+}
+
+
+#footer-class {
+
+   height: 40px;
+    
+}
+
+
+
+#interests{
+    margin-bottom: 20px;
+
+    
+}
+
+#interest{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: roboto;
+
+}
+
+
+#contact{
+    margin-bottom: 20px;    
+}
