@@ -31,12 +31,15 @@ h4 {
 
 section {
     background-color: #fff;
-    border: 1px solid #ccc;
-    text-align: auto;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    /* border: 1px solid #ccc; */
+    /* text-align: auto; */
+    padding: 30px;
+    /* : 1000px; */
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 button {
@@ -69,7 +72,7 @@ a{
 }
 
 .data{
-    font-size: 20px;
+    font-size: 18px;
     font-family: roboto;
 }
 
@@ -143,13 +146,16 @@ nav a:hover b {
 
 
 .skills-list {
+    /* margin-bottom: 20px; */
     list-style-type: none;
     padding: 0;
 }
 
 .skills-list li {
+    margin-bottom: 15px;
     margin-left: 10px;
-    margin-bottom: 10px;
+    
+    
     font-size: 20px;
     font-family: roboto;
 }
@@ -174,18 +180,45 @@ nav a:hover b {
 
 #interests{
     margin-bottom: 20px;
-
-    
 }
 
 #interest{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 20px;
     font-family: roboto;
 
 }
-
-
 #contact{
     margin-bottom: 20px;    
+    /* margin-bottom: 15px; */
+    font-size: 20px;
+    /* font-family: roboto;  */
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-content img {
+    /* border-radius: circle(50%); */
+    clip-path: circle(50%);
+    max-width: 200px;
+    max-height: 200px;
+    /* padding-top: 15px;
+    padding-left: 12px; */
+    /* border-radius: 50%; */
+
+    
+}
+
+.text {
+    /* margin-top: 20px; Adjust as needed */
+    margin-left: 10px;
+}
+
+.data {
+    text-align: justify;
 }
