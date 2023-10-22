@@ -11,8 +11,10 @@ header {
     text-align: center;
     background-color: black;
     color: #fff;
-    padding: 5px;
+    padding: 15px;
     margin:auto;
+    /* width: 105%; */
+
 }
 
 main {
@@ -69,6 +71,10 @@ p {
 
 a{
     color: #333;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
 }
 
 .data{
@@ -87,21 +93,30 @@ footer {
 }
 
 nav {
+    position: fixed;
     display: block;
+     display: block;
+    background-color: #333;
+    top: 0;
+    z-index: 1000;
+
 }
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
     background-color: #333;
+    width: 100%;
+    display: block;
+    text-align: center;
     overflow: hidden;
+    display: block;
 }
 
 
 nav li {
     display: inline-block;
-    margin: 0;
+    
+    align-items:end;
+
 }
 
 nav a {
@@ -117,21 +132,26 @@ nav a {
 
 nav a:hover {
     background-color: #444;
+    text-decoration: white;
+    color: inherit;
+    text-decoration: none;
+    
+    
 }
 
 nav a.active {
     background-color: #555;
+    text-decoration: white;
 }
 
 nav b {
     font-size: 16px;
+    text-decoration: white;
     font-weight: normal;
 }
 
-/* Add a subtle underline on hover */
-nav a:hover b {
-    text-decoration: underline;
-}
+
+
 .star {
     font-size: 24px; /* Adjust the size of the stars as needed */
     color: #FFD700; /* Set the star color to gold */
@@ -221,4 +241,63 @@ nav a:hover b {
 
 .data {
     text-align: justify;
+}
+
+
+#headerclass{
+    margin-top: 100px;
+    width:100%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 30%;
+    margin: 10px;
+    border: none;
+    transition: transform 0.2s;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 25px;
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    border-radius: 10px;
+}
+
+.progress-label {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.easy { border-top: 5px solid #28a745; }
+.medium { border-top: 5px solid #007bff; }
+.hard { border-top: 5px solid #dc3545; }
+
+.progress-data {
+    font-size: 1.2em;
 }
