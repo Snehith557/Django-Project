@@ -14,10 +14,24 @@ def leetcode_profile(request):
     soup = BeautifulSoup(response.text, 'html.parser')
     
     solved_problems = soup.find_all('span', class_='mr-[5px] text-base font-medium leading-[20px] text-label-1 dark:text-dark-label-1')
+    solved_types = soup.find_all('span', class_='text-xs font-medium text-label-4 dark:text-dark-label-4')
     
-    values = []
+    values = {}
+    problemType = ['easy_solved','medium_solved','hard_solved','easy_problm','medium_problm','hard_problm']
+    # totalProblems = []
+
+    index = 0
     for span in solved_problems:
-        values.append(span.text)
+        values[problemType[index]]=span.text
+        index+=1
+    
+    # index = 0
+    for span in solved_types:
+        values[problemType[index]] = span.text
+        index+=1
+    
+    print(values)
+
     
     return values
 
@@ -27,8 +41,9 @@ def leetcode_profile(request):
 # <div class="whitespace-nowrap text-xs text-label-3 dark:text-dark-label-3 
 
 def homePage(request):
-    # leetcode_profile('')
+    data = leetcode_profile('')
+    # print(data)
 
 
-    return render(request,'homepage.html')
+    return render(request,'homepage.html',context=data)
 
