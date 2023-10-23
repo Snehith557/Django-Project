@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="{% static 'homecss.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="{% static 'script.js' %}"></script>
+
     <nav class = "navbar">
         <ul>
             <li><a href="#about">About Me</a></li>
@@ -130,36 +131,36 @@
                     <div class="card-body">
                         <h5 class="card-title" style="padding: 2px;">Easy Problems</h5>
                         <div class="progress-label">Progress</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                        <div class="progress" id="easy-progress">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">1%</div>
                         </div>
-                        <div class="progress-data">100/150</div>
+                        <div class="progress-data" id="easy-data">{{easy_solved}}{{easy_problm}}</div>
                     </div>
                 </div>
-
+        
                 <div class="card medium">
                     <div class="card-body">
                         <h5 class="card-title" style="padding: 2px;">Medium Problems</h5>
                         <div class="progress-label">Progress</div>
-                        <div class="progress">
-                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                        <div class="progress" id="medium-progress">
+                            <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">10%</div>
                         </div>
-                        <div class="progress-data">75/150</div>
+                        <div class="progress-data" id="medium-data">{{medium_solved}}{{medium_problm}}</div>
                     </div>
                 </div>
-
+        
                 <div class="card hard">
                     <div class="card-body">
                         <h5 class="card-title" style="padding: 1px;">Hard Problems</h5>
-                        
                         <div class="progress-label">Progress</div>
-                        <div class="progress">
+                        <div class="progress" id="hard-progress">
                             <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
                         </div>
-                        <div class="progress-data"></div>
+                        <div class="progress-data" id="hard-data">{{hard_solved}}{{hard_problm}}</div>
                     </div>
                 </div>
             </div>
+        
 
             
         <!-- </body> -->
@@ -187,7 +188,7 @@
             <ul>
                 <li><i id = "contact" class="fas fa-envelope"></i> snehith1233@gmail.com </li>
                 <li><i id = "contact" class="fas fa-phone"></i> 6362320121</li>
-                <li><i id = "contact" class="fab fa-github"></i><a href="https://github.com/Snehith557"> GitHub</a></li>
+                <li><i id = "contact" class="fab fa-github"></i><a  style="color:black;text-decoration: none;" href="https://github.com/Snehith557"> GitHub</a></li>
             </ul>
         </section>
     </main>
