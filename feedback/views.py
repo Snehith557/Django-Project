@@ -1,21 +1,21 @@
 # views.py
-from django.shortcuts import render,redirect
-from .form import feebBackForm
-# Create your views here.
+from django.shortcuts import render, redirect
+from .form import feebBackForm # Updated import for better naming conventions
+from django.contrib import messages  # Import messages module for feedback messages
 
 def feedback(request):
-    form = feebBackForm()
     if request.method == 'POST':
-        # print(request.POST)
-        # extract all the data and write it to the database
         form = feebBackForm(request.POST)
         if form.is_valid():
-            # print(request.POST)
             form.save()
-        # means return to the main page
-        return redirect('/')
+            messages.success(request, 'Thank you for your feedback!')  # Provide feedback to the user
+            return redirect('/')  # Redirect to the home page or appropriate URL
+        else:
+            messages.error(request, 'There was an error in the form. Please check and try again.')  # Provide error feedback
+    else:
+        form = feebBackForm()
 
-
-    context = {'form':form}
-    return render(request,'feedBack.html',context)
-
+    context = {'form': form}
+    # return redirect('/')
+    return render(request, 'feedback.html', context)
+    # return NULL
