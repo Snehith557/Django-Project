@@ -2,6 +2,8 @@
 from django.shortcuts import render, redirect
 from .form import feebBackForm # Updated import for better naming conventions
 from django.contrib import messages  # Import messages module for feedback messages
+from .models import feedBacks
+from django.contrib.auth.decorators import login_required
 
 def feedback(request):
     if request.method == 'POST':
@@ -19,3 +21,11 @@ def feedback(request):
     # return redirect('/')
     return render(request, 'feedback.html', context)
     # return NULL
+
+
+
+    
+    # return render(request,'feedBack_details.html', dataList)
+    # return redirect('/feedback')
+
+    

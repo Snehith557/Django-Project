@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+
+    <script> console.log()</script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .feedback-container {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .feedback-card {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .feedback-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .feedback-message {
+            margin-top: 10px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="feedback-container">
+    <h1>Feedback From Viewers</h1>
+
+    {% for key, item in dataList.items %}
+    <div class="feedback-card">
+        <p class="feedback-name">Name : {{ item.name }}</p>
+        <p class="feedback-message">Email-id : {{ item.email }}</p>
+        <p class="feedback-message">Feedback : {{ item.description }}</p>
+    </div>
+    {% endfor %}
+
+
+
+
+</div>
+
+</body>
+</html>
+
+

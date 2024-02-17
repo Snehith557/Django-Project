@@ -27,11 +27,18 @@
             <li><a href="#skills">Skills</a></li>
             <li><a href="#interests">Interests</a></li>
             <li><a href="feedback">Feedback </a></li>
+            <li style="float: right;">
+                <a href="{% url 'admin' %}" style="display: inline-block; padding: 10px 20px; background-color: #3498db; color: #fff; text-decoration: none; border-radius: 5px;">Admin Login</a>
+            </li>
         </ul>
     </nav>
     
     <header >
         <h1 >SNEHITH H</h1>
+        <li style="float: right;">
+            <a href="{% url 'feedBacks' %}?next={%url 'feedBacks' %}" style="display: inline-block; padding: 13px 30px; background-color: #3498db; color: #fff; text-decoration: none; border-radius: 5px;">ViewFeedBack</a>
+        </li>
+
     </header>
 
 
